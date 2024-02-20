@@ -2,7 +2,7 @@ import {
   MVSContract,
   MVSMerkleWitness,
   UserData,
-} from "../../../contracts/build/contracts/src";
+} from "../contracts/src";
 import { Mina, PublicKey, fetchAccount } from "o1js";
 import axios from "axios";
 
