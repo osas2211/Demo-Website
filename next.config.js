@@ -33,8 +33,8 @@ const nextConfig = {
   webpack(config) {
     config.resolve.alias = {
       ...config.resolve.alias,
-      o1js: require("path").resolve("../node_modules/o1js"),
-      contracts: require("path").resolve("../contracts/build/contracts/"),
+      o1js: require("path").resolve("./node_modules/o1js"),
+      contracts: require("path").resolve("./contracts/src/"),
     };
     config.experiments = { ...config.experiments, topLevelAwait: true };
     return config;

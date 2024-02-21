@@ -30,7 +30,7 @@ export async function init() {
       localStorage.getItem("WALLET_CONNECTED_BEFORE_FLAG") == "true";
 
     if (hasConnected) {
-      accounts = await requestAccounts();
+      accounts = await getAccounts();
       account = await handleAccountsChanged(accounts);
     }
   }
@@ -80,6 +80,17 @@ async function requestAccounts() {
   return data;
 }
 
+async function getAccounts() {
+  let data = await mina
+    .getAccounts()
+    .then((data: any) => {
+      return data;
+    })
+    .catch((e: any) => console.error(e));
+
+  return data;
+}
+
 async function handleAccountsChanged(accounts: string[]) {
   let publicKey58: string = "";
   let walletConnected: boolean = false;
@@ -87,11 +98,9 @@ async function handleAccountsChanged(accounts: string[]) {
 
   if (accounts && accounts.length) {
     publicKey58 = accounts[0];
-    accountExists = await checkIfAccountExists(publicKey58);
-    if (accountExists) {
-      walletConnected = true;
-      localStorage.setItem("WALLET_CONNECTED_BEFORE_FLAG", "true");
-    }
+    // accountExists = await checkIfAccountExists(publicKey58);
+    walletConnected = true;
+    localStorage.setItem("WALLET_CONNECTED_BEFORE_FLAG", "true");
   } else {
     localStorage.setItem("WALLET_CONNECTED_BEFORE_FLAG", "false");
   }

@@ -3,14 +3,14 @@ import style from "@/styles/Home.module.css";
 import Image from "next/image";
 // import * as mina from "@/lib/mina";
 import { useMinaContext } from "@/context/MinaContext";
-
 const { connect } = await import("@/lib/mina");
+
 export default function ConnectWallet() {
     const { updateState } = useMinaContext()
 
     const connectW = async () => {
         try {
-            const { accountPubKey, network, walletConnected, accountExists } = await connect()
+            const { accountPubKey, network, walletConnected, accountExists } = await connect();
             updateState({
                 network: network,
                 publicKey58: accountPubKey,
