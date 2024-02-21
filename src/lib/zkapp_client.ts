@@ -12,7 +12,7 @@ export interface Data {
 
 const BERKELEY_ENDPOINT = "https://proxy.berkeley.minaexplorer.com/graphql";
 
-const ZKDB_ENDPOINT = "http://localhost:1234/zkdb";
+const ZKDB_ENDPOINT = "https://mvs-server-a92062a6e82b.herokuapp.com/zkdb";
 
 async function createRecord(data: Data, userPubKey: string) {
   const responseData = await axios
