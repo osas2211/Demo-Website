@@ -1,6 +1,5 @@
 import Head from "next/head"
 import GradientBG from "./GradientBG.js"
-
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
@@ -13,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <link rel="icon" href="/assets/favicon.ico" />
       </Head>
       {/* <GradientBG></GradientBG> */}
-      <div>{children}</div>
+      <div className="text-white dark">{children}</div>
     </>
   )
 }
