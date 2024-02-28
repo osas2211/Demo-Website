@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react"
 import { Header } from "./Header"
-import Link from "next/link"
-import Image from "next/image"
 import WaitlistForm from "../Waitlist"
 import Logo from "../Logo"
 import { Effects } from "../Effects"
