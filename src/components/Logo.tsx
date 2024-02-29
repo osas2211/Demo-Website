@@ -1,6 +1,6 @@
 import Image from "next/image"
 import styles from "@/styles/Home.module.css"
-import heroMinaLogo from "../../public/assets/hero-mina-logo.svg"
+import heroMinaLogo from "../../public/assets/mvs.png"
 
 export default function Logo() {
   return (
@@ -16,8 +16,8 @@ export default function Logo() {
               className={styles.logo}
               src={heroMinaLogo}
               alt="Mina Logo"
-              width="40"
-              height="40"
+              width="150"
+              height="150"
               priority
             />
           </a>

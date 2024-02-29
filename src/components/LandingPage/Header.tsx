@@ -6,14 +6,14 @@ import Link from "next/link"
 export const Header = ({ hideBtn }: { hideBtn?: boolean }) => {
     return (
         <div className="bg-[transparent] shadow-md border-b-grey-700 border-b-[1px]">
-            <div className=" container mx-auto p-7 flex justify-between items-center relative z-[10]">
-                <Link href={"/"}>
+            <div className=" container mx-auto p-3 flex justify-between items-center relative z-[10]">
+                <Link href={"/"} className="relative z-[100]">
                     <Image
                         className={styles.logo}
-                        src={"/assets/hero-mina-logo.svg"}
+                        src={"/assets/mvs.png"}
                         alt="Mina Logo"
-                        width="40"
-                        height="40"
+                        width="150"
+                        height="150"
                         priority
                     />
                 </Link>
