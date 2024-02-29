@@ -24,7 +24,7 @@ export default function Verify() {
                         className={
                             "bg-grey-900 relative z-[100] md:h-[25rem] md:w-[25rem] h-[18rem] w-full py-7 px-7 rounded-lg shadow-md flex justify-center items-center flex-col overflow-hidden hover:bg-grey-800"
                         }
-                        style={{ boxShadow: "0px 0px 4px 0px inset #C051FF" }}
+                        style={{ boxShadow: "0px 0px 4px 0px inset #fd366e" }}
                     >
                         <p className={"text-sm text-grey-300 mb-7"}>
                             Enter wallet address to be checked

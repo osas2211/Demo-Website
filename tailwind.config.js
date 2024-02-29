@@ -12,6 +12,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-linear": "linear-gradient(to right, #918DEA, #FF603B)",
       },
       colors: {
         sage: "#C0C999",
@@ -33,7 +34,7 @@ module.exports = {
           1: "#0A0A0A",
           0: "#FFFFFF",
         },
-        primary: "#C051FF",
+        primary: "#FF603B",
       },
       screens: {
         md: { min: "880px" },

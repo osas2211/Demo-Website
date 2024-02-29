@@ -19,7 +19,15 @@ export const LandingPage = () => {
                     </p>
                     <h1 className="md:text-[5rem] text-[1.5rem] font-bold text-white md:leading-[4.5rem] leading-[1rem]">
                         <span className="special-text"> MINA VERIFICATION</span>{" "}
-                        <span className="text-primary underline">SERVICE</span>
+                        <span
+                            className="bg-gradient-linear underline"
+                            style={{
+                                backgroundClip: "text",
+                                WebkitTextFillColor: "transparent",
+                            }}
+                        >
+                            SERVICE
+                        </span>
                     </h1>
                     <p className="md:text-lg text-sm mt-5 lg:w-[60%] mx-auto text-[16px] text-grey-200">
                         Introducing MVS - Mina Verification Service, a project that provides
@@ -40,7 +48,7 @@ export const LandingPage = () => {
                     style={{
                         width: "100vw",
                         height: "100vh",
-                        opacity: "0.02",
+                        opacity: "0.015",
                         objectFit: "cover",
                     }}
                 />

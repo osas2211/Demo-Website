@@ -33,7 +33,7 @@ export default function Demo() {
   }, [checkState])
 
   return (
-    <main className="bg-grey-900 min-h-[100vh] relative overflow-hidden grotesk">
+    <main className="bg-grey-1000 min-h-[100vh] relative overflow-hidden grotesk">
       <Header hideBtn />
       <div className="container mx-auto mt-10">
         <h2 className={"text-center md:text-3xl text-xl mb-5"}>DEMO</h2>

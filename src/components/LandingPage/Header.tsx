@@ -10,7 +10,7 @@ export const Header = ({ hideBtn }: { hideBtn?: boolean }) => {
                 <Link href={"/"} className="relative z-[100]">
                     <Image
                         className={styles.logo}
-                        src={"/assets/mvs.png"}
+                        src={"/assets/mvs.svg"}
                         alt="Mina Logo"
                         width="150"
                         height="150"

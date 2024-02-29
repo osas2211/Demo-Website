@@ -12,11 +12,11 @@ export default function WaitlistForm() {
         name="email"
         type="email"
         placeholder="Enter email"
-        className="px-2 py-2 bg-grey-700 outline-none shadow-md border-[1px] border-primary rounded-md text-white md:w-[20rem] w-full"
+        className="px-2 py-2 bg-grey-700 outline-none shadow-md border-[1px] border-primary/80 rounded-md text-white md:w-[20rem] w-full"
       />
       <button
         type="submit"
-        className="px-10 py-2 bg-primary shadow-md rounded-md text-white md:w-auto w-full"
+        className="px-10 py-2 bg-primary/80 shadow-md rounded-md text-white md:w-auto w-full"
       >
         Join Waitlist
       </button>
