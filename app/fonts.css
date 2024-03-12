@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Monument";
+  src: url("/fonts/MonumentExtended-Black.otf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Monument";
+  src: url("/fonts/MonumentExtended-BlackItalic.otf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Monument";
+  src: url("/fonts/MonumentExtended-Light.otf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Monument";
+  src: url("/fonts/MonumentExtended-LightItalic.otf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Monument";
+  src: url("/fonts/MonumentExtended-Regular.otf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Monument";
+  src: url("/fonts/MonumentExtended-RegularItalic.otf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
