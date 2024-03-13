@@ -5,7 +5,7 @@ import { Button } from "./Button"
 
 export const Header = () => {
   return (
-    <header className="py-[2rem] flex items-center justify-between text-[14px]">
+    <header className="py-[2rem] flex items-center justify-between text-[14px] relative z-[10]">
       <div className="flex items-center gap-7">
         <Logo />
         <ul className="flex items-center gap-7">
