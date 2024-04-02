@@ -2,6 +2,7 @@
 import { Header } from "@/components/Header"
 import React from "react"
 import { DemoOptions } from "./DemoOptions"
+import { Footer } from "@/components/Footer"
 
 const DemoPage = () => {
   return (
@@ -9,6 +10,7 @@ const DemoPage = () => {
       <div className="px-[1.2rem] md:w-[92%] mx-auto">
         <Header />
         <DemoOptions />
+        <Footer />
       </div>
       <div className="absolute top-[50%] left-[40%] translate-x-[50%] translate-y-[-40%] reveal">
         <div
