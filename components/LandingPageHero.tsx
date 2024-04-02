@@ -3,49 +3,9 @@ import React from "react"
 import { Button } from "./Button"
 import { FiArrowUpRight } from "react-icons/fi"
 import { PiSealCheckFill } from "react-icons/pi"
-import gsap from "gsap"
-import { useGSAP } from "@gsap/react"
+import Link from "next/link"
 
 export const LandingPageHero = () => {
-  const timeline = gsap.timeline()
-  useGSAP(() => {
-    gsap.from(".downUp", {
-      y: "100%",
-      duration: 1.5,
-      ease: "power4.out",
-      opacity: 0,
-      stagger: 0.5,
-      delay: 0.5,
-    })
-    gsap.from(".reveal", {
-      duration: 1.5,
-      ease: "bounce.out",
-      delay: 1.5,
-      opacity: 0,
-    })
-    gsap.from(".leftRight", {
-      x: "-100%",
-      duration: 2.5,
-      ease: "power4.out",
-      opacity: 0,
-      stagger: 0.5,
-      delay: 1.5,
-    })
-    gsap.from(".moveObj", {
-      width: "600px",
-      height: "600px",
-      duration: 1.5,
-      ease: "power4.out",
-      delay: 0.5,
-    })
-    gsap.from(".shine", {
-      duration: 1.5,
-      ease: "power4.out",
-      scale: 1.5,
-      stagger: 0.5,
-      delay: 0.5,
-    })
-  }, [])
   return (
     <div className="relative md:mt-[0.5rem] mt-[1rem] z-[10]">
       <div className="flex md:flex-row flex-col items-end gap-4 justify-between overflow-hidden">
@@ -119,14 +79,16 @@ export const LandingPageHero = () => {
                 <div className="flex flex-col justify-between items-end h-full ">
                   <div>
                     <h2 className="md:text-4xl text-xl font-[500] text-custom-black/90 mb-3">
-                      MVS
+                      Demo MVS
                     </h2>
                     <p className="md:text-lg text-sm">
                       Learn about how MVS was born and how it is leveraging on
                       the web3 space.
                     </p>
                   </div>
-                  <FiArrowUpRight className="md:text-[5.6rem] text-[4rem]" />
+                  <Link href="/demo">
+                    <FiArrowUpRight className="md:text-[5.6rem] text-[4rem] hover:translate-y-[-10px] transition-all" />
+                  </Link>
                 </div>
               </div>
             </div>
