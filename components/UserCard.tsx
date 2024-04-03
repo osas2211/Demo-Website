@@ -3,7 +3,11 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 
-export const UserCard = () => {
+interface props {
+  setConnected: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export const UserCard = ({ setConnected }: props) => {
   return (
     <div className="w-full relative z-[10]">
       <h2 className="text-center mb-6">
@@ -49,18 +53,15 @@ export const UserCard = () => {
                 </div>
               </div>
               <div className="flex md:flex-row flex-col gap-3">
-                <Link
-                  href={""}
+                <button
                   className="w-full bg-red-500/10 text-red-500 text-center py-4 block rounded-md text-sm flex items-center justify-center gap-2"
+                  onClick={() => setConnected(false)}
                 >
                   Sign Out
-                </Link>
-                <Link
-                  href={""}
-                  className="w-full bg-primary text-black text-center py-4 block rounded-md text-sm flex items-center justify-center gap-2"
-                >
+                </button>
+                <button className="w-full bg-primary text-black text-center py-4 block rounded-md text-sm flex items-center justify-center gap-2">
                   Generate Proof
-                </Link>
+                </button>
               </div>
             </div>
           </div>

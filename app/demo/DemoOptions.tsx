@@ -19,7 +19,7 @@ export const DemoOptions = () => {
       </div>
       <div className="flex justify-center gap-5 flex-col md:flex-row ">
         <div className="overflow-hidden">
-          <div className="h-[600px] md: w-[500px] w-full bg-black/30 border-[1px] border-primary/10 rounded-lg relative px-7 py-7 leftRight">
+          <div className="h-[600px] md:w-[500px] w-full bg-black/30 border-[1px] border-primary/10 rounded-lg relative px-7 py-7 leftRight">
             <div>
               <div className="h-1 w-1 bg-primary/90 rounded-[100%] absolute top-2 left-2" />
               <div className="h-1 w-1 bg-primary/90 rounded-[100%] absolute top-2 right-2" />
@@ -57,7 +57,7 @@ export const DemoOptions = () => {
           </div>
         </div>
         <div className="overflow-hidden">
-          <div className="h-[600px] md: w-[500px] w-full bg-black/30 md:mt-8 border-[1px] border-primary/10 rounded-lg relative px-4 py-7 overflow-hidden leftRight">
+          <div className="h-[600px] md:w-[500px] w-full bg-black/30 md:mt-8 border-[1px] border-primary/10 rounded-lg relative px-4 py-7 overflow-hidden leftRight">
             <div>
               <div className="h-1 w-1 bg-primary/90 rounded-[100%] absolute top-2 left-2" />
               <div className="h-1 w-1 bg-primary/90 rounded-[100%] absolute top-2 right-2" />
