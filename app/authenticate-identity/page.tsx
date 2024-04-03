@@ -4,14 +4,16 @@ import React from "react"
 import { AuthenticationOptions } from "./AuthenticationOptions"
 import { Footer } from "@/components/Footer"
 import { GoBack } from "@/components/GoBack"
+import { UserCard } from "@/components/UserCard"
 
 const DemoPage = () => {
+  const connected = true
   return (
     <main className="relative monument bg-custom-black text-custom-white min-h-screen overflow-x-hidden no-scrollbar">
       <div className="px-[1.2rem] md:w-[92%] mx-auto">
         <Header />
         <GoBack />
-        <AuthenticationOptions />
+        {connected ? <UserCard /> : <AuthenticationOptions />}
         <Footer />
       </div>
       <div className="absolute top-[50%] left-[40%] translate-x-[50%] translate-y-[-40%] reveal">
